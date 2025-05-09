@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Explorando o Mundo</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f7f4;
+      color: #2e3d32;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #7d2e2e;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    nav {
+      background-color: #a04343;
+      display: flex;
+      justify-content: center;
+      padding: 15px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 20px;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section, article, aside {
+      background-color: white;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    h2, h3 {
+      color: #7d2e2e;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    h4 {
+      color: #8e3838;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .galeria img {
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    video {
+      display: block;
+      margin: 20px auto;
+      border-radius: 10px;
+      width: 100%;
+      max-width: 600px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 12px;
+      font-size: 1em;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    button {
+      padding: 12px;
+      background-color: #7d2e2e;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #5e1b1b;
+    }
+
+    footer {
+      background-color: #5e1b1b;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    a {
+      color: #7d2e2e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Explorando o Mundo</h1>
+    <p>Relatos, dicas e aventuras para você viajar melhor</p>
+  </header>
+
+  <nav>
+    <a href="#destinos">Destinos</a>
+    <a href="#dicas">Dicas</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+    <a href="#links">Links úteis</a>
+  </nav>
+
+  <main>
+
+    <section id="destinos">
+      <h2>🌍 Relatos de Viagens</h2>
+
+      <article>
+        <h4>Europa - Itália e França</h4>
+        <p>Visitamos a romântica Veneza, admiramos o Coliseu em Roma e depois seguimos para Paris, onde a Torre Eiffel brilhou em nossa noite.</p>
+      </article>
+
+      <article>
+        <h4>Ásia - Japão e Tailândia</h4>
+        <p>Em Tóquio, modernidade e tradição se encontram. Já na Tailândia, templos dourados e praias paradisíacas tornaram a viagem inesquecível.</p>
+      </article>
+
+      <article>
+        <h4>América do Sul - Chile e Argentina</h4>
+        <p>Exploramos o Deserto do Atacama no Chile e seguimos para a Patagônia Argentina, com paisagens de tirar o fôlego.</p>
+      </article>
+    </section>
+
+    <section id="dicas">
+      <h2>🎒 Dicas de Viagem</h2>
+      <ul>
+        <li>Planeje seu roteiro com antecedência e tenha um plano B.</li>
+        <li>Leve somente o necessário: menos é mais na mala.</li>
+        <li>Use aplicativos para economizar em passagens e hospedagem.</li>
+        <li>Pesquise sobre os costumes locais para não cometer gafes.</li>
+        <li>Faça backups dos seus documentos e fotos importantes.</li>
+      </ul>
+    </section>
+
+    <section id="galeria">
+      <h2>📸 Galeria de Fotos</h2>
+
+      <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Galeria de Viagens</title>
+  <style>
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+      gap: 25px;
+      padding: 20px;
+      justify-items: center;
+    }
+
+    .galeria figure {
+      width: 100%;
+      max-width: 320px;
+      margin: 0;
+      text-align: center;
+    }
+
+    .galeria img {
+      width: 100%;
+      aspect-ratio: 4/3; /* Proporcional */
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .galeria figcaption {
+      margin-top: 8px;
+      font-size: 0.95em;
+      color: #333;
+    }
+
+    /* Responsivo */
+    @media (max-width: 900px) {
+      .galeria {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .galeria {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="galeria">
+    <figure>
+      <img src="img/shutterstock_1348630997.jpg" alt="Coliseu em Roma">
+      <figcaption>Coliseu - Roma, Itália</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/France_Paris_Eiffel_443254_1920x1200.jpg" alt="Torre Eiffel">
+      <figcaption>Torre Eiffel - Paris, França</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/185d19274cdf4b3c9e4efda8bb2efb01--shibuya-tokyo-tokyo-japan.jpg" alt="Tóquio à noite">
+      <figcaption>Shibuya - Tóquio, Japão</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/thailand-chiang-mai-wat-doi-suthep.webp" alt="Templo na Tailândia">
+      <figcaption>Templo Doi Suthep - Chiang Mai, Tailândia</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/Laguna Verde-1275x850.jpg" alt="Deserto do Atacama">
+      <figcaption>Deserto do Atacama - Chile</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/699298-widescreen-patagonia-wallpapers-3840x2160-windows-10.jpg" alt="Fitz Roy - Patagônia">
+      <figcaption>Monte Fitz Roy - Patagônia, Argentina</figcaption>
+    </figure>
+  </div>
+
+</body>
+</html>
+
+      
+
+<h2>📽️ Galeria de Vídeos</h2>
+
+<style>
+  .galeria-videos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .galeria-videos figure {
+    width: 100%;
+    max-width: 240px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .galeria-videos video {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .galeria-videos figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: #444;
+  }
+
+  /* Responsivo para telas menores */
+  @media (max-width: 900px) {
+    .galeria-videos {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 600px) {
+    .galeria-videos {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<section class="galeria-videos">
+  <figure>
+    <video controls>
+      <source src="video/torre.mp4" type="video/mp4">
+    </video>
+    <figcaption>Paris - França</figcaption>
+  </figure>
+
+  <figure>
+    <video controls>
+      <source src="video/coliseu.mp4" type="video/mp4">
+    </video>
+    <figcaption>Roma - Itália</figcaption>
+  </figure>
+
+  <figure>
+    <video controls>
+      <source src="video/tokyo.mp4" type="video/mp4">
+    </video>
+    <figcaption>Tóquio - Japão</figcaption>
+  </figure>
+
+  <figure>
+    <video controls>
+      <source src="video/tailandia.mp4" type="video/mp4">
+    </video>
+    <figcaption>Chiang Mai - Tailândia</figcaption>
+  </figure>
+
+  <figure>
+    <video controls>
+      <source src="video/atacama.mp4" type="video/mp4">
+    </video>
+    <figcaption>Deserto do Atacama - Chile</figcaption>
+  </figure>
+
+  <figure>
+    <video controls>
+      <source src="video/patagonia.mp4" type="video/mp4">
+    </video>
+    <figcaption>Patagônia - Argentina</figcaption>
+  </figure>
+</section>
+
+
+    <section id="contato">
+      <h2>📬 Fale Conosco</h2>
+      <form>
+        <label>Nome:</label>
+        <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="Digite seu email" required>
+
+        <label>Mensagem:</label>
+        <textarea name="mensagem" placeholder="Escreva aqui sua dúvida ou comentário..." rows="5" required></textarea>
+
+        <button type="submit">Enviar mensagem</button>
+      </form>
+    </section>
+
+    <section id="links">
+      <h2>🔗 Links Úteis</h2>
+      <ul>
+        <li><a href="https://www.mochileiros.com" target="_blank">Mochileiros.com</a> – Comunidade com roteiros e dicas</li>
+        <li><a href="https://www.nomadicmatt.com" target="_blank">Nomadic Matt</a> – Blog internacional com dicas para economizar</li>
+        <li><a href="https://viajenaviagem.com" target="_blank">Viaje na Viagem</a> – Dicas e experiências em português</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog Explorando o Mundo. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
